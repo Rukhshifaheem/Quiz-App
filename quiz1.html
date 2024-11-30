@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid quiz py-5">
+        <h1 class="text-center">HTML Quiz</h1>
+        <form class="container p-5" id="htmlQuizForm">
+            <!-- Question 1 -->
+            <div class="mb-4">
+                <p><strong>1. What does HTML stand for?</strong></p>
+                <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label><br>
+                <label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label><br>
+                <label><input type="radio" name="q1" value="c"> Hyperlinks and Text Markup Language</label><br>
+                <label><input type="radio" name="q1" value="d"> High Tech Markup Language</label>
+            </div>
+            <!-- Question 2 -->
+            <div class="mb-4">
+                <p><strong>2. Who is making the Web standards?</strong></p>
+                <label><input type="radio" name="q2" value="a"> Google</label><br>
+                <label><input type="radio" name="q2" value="b"> Microsoft</label><br>
+                <label><input type="radio" name="q2" value="c"> The World Wide Web Consortium (W3C)</label><br>
+                <label><input type="radio" name="q2" value="d"> Mozilla</label>
+            </div>
+            <!-- Question 3 -->
+            <div class="mb-4">
+                <p><strong>3. Choose the correct HTML element for the largest heading:</strong></p>
+                <label><input type="radio" name="q3" value="a"> &lt;h6&gt;</label><br>
+                <label><input type="radio" name="q3" value="b"> &lt;h1&gt;</label><br>
+                <label><input type="radio" name="q3" value="c"> &lt;h3&gt;</label><br>
+                <label><input type="radio" name="q3" value="d"> &lt;heading&gt;</label>
+            </div>
+            <!-- Question 4 -->
+            <div class="mb-4">
+                <p><strong>4. What is the correct HTML element for inserting a line break?</strong></p>
+                <label><input type="radio" name="q4" value="a"> &lt;br&gt;</label><br>
+                <label><input type="radio" name="q4" value="b"> &lt;break&gt;</label><br>
+                <label><input type="radio" name="q4" value="c"> &lt;lb&gt;</label><br>
+                <label><input type="radio" name="q4" value="d"> &lt;line&gt;</label>
+            </div>
+            <!-- Question 5 -->
+            <div class="mb-4">
+                <p><strong>5. Which character is used to indicate an end tag?</strong></p>
+                <label><input type="radio" name="q5" value="a"> *</label><br>
+                <label><input type="radio" name="q5" value="b"> /</label><br>
+                <label><input type="radio" name="q5" value="c"> ^</label><br>
+                <label><input type="radio" name="q5" value="d"> @</label>
+            </div>
+            <button type="button" class="btn btn-dark" id="submitHtmlQuiz">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="quiz-handler.js"></script>
+</body>
+</html>

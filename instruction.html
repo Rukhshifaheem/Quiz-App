@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Instructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid rule py-5">
+        <h1 class="text-center mb-4" id="quizTitle">Quiz Instructions</h1>
+        <div class="container card p-4 shadow-sm">
+            <h3 class="text-center">Instructions:</h3>
+            <ul id="quizInstructions">
+                <li>This quiz consists of 5 multiple-choice questions.</li>
+                <li>Each question contains 3 marks.</li>
+                <li>You have 15 minutes to attempt the entire quiz.</li>
+                <li>For each question, select the correct option.</li>
+                <li>Your passing percentage is 70%. Make sure to score at least 70% to pass.</li>
+                <li>Once you click "Start Quiz," you will be taken to the first question of the selected quiz.</li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-dark" id="startQuizBtn">Start Quiz</button>
+        </div>
+    </div>
+
+    <script>
+        // Get the URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const quizType = urlParams.get('quiz');  // Get the 'quiz' query parameter
+        
+        // Quiz specific changes
+        const quizTitle = document.getElementById('quizTitle');
+        const quizInstructions = document.getElementById('quizInstructions');
+        const startQuizBtn = document.getElementById('startQuizBtn');
+        
+        if (quizType === 'html') {
+            quizTitle.textContent = 'HTML Quiz Instructions';
+            startQuizBtn.addEventListener('click', () => {
+                window.location.href = './quiz1.html';
+            });
+        } else if (quizType === 'css') {
+            quizTitle.textContent = 'CSS Quiz Instructions';
+            startQuizBtn.addEventListener('click', () => {
+                window.location.href = './quiz2.html';
+            });
+        } else if (quizType === 'javascript') {
+            quizTitle.textContent = 'JavaScript Quiz Instructions';
+            startQuizBtn.addEventListener('click', () => {
+                window.location.href = './quiz3.html';
+            });
+        } else {
+            quizTitle.textContent = 'Invalid Quiz Selection';
+            quizInstructions.innerHTML = '<li>Please select a valid quiz from the main page.</li>';
+            startQuizBtn.disabled = true;
+        }
+    </script>
+</body>
+</html>

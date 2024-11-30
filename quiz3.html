@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid quiz py-5">
+        <h1 class="text-center">JavaScript Quiz</h1>
+        <form class="container p-5" id="jsQuizForm">
+            <!-- Question 1 -->
+            <div class="mb-4">
+                <p><strong>1. What is the correct syntax for referring to an external script called "script.js"?</strong></p>
+                <label><input type="radio" name="q1" value="a"> &lt;script src="script.js"&gt;</label><br>
+                <label><input type="radio" name="q1" value="b"> &lt;script href="script.js"&gt;</label><br>
+                <label><input type="radio" name="q1" value="c"> &lt;script name="script.js"&gt;</label><br>
+                <label><input type="radio" name="q1" value="d"> &lt;script file="script.js"&gt;</label>
+            </div>
+            <!-- Question 2 -->
+            <div class="mb-4">
+                <p><strong>2. How do you create a function in JavaScript?</strong></p>
+                <label><input type="radio" name="q2" value="a"> function:myFunction()</label><br>
+                <label><input type="radio" name="q2" value="b"> function myFunction()</label><br>
+                <label><input type="radio" name="q2" value="c"> function = myFunction()</label><br>
+                <label><input type="radio" name="q2" value="d"> create function myFunction()</label>
+            </div>
+            <!-- Question 3 -->
+            <div class="mb-4">
+                <p><strong>3. How do you write "Hello World" in an alert box?</strong></p>
+                <label><input type="radio" name="q3" value="a"> alert("Hello World");</label><br>
+                <label><input type="radio" name="q3" value="b"> alertBox("Hello World");</label><br>
+                <label><input type="radio" name="q3" value="c"> msg("Hello World");</label><br>
+                <label><input type="radio" name="q3" value="d"> alertBox = "Hello World";</label>
+            </div>
+            <!-- Question 4 -->
+            <div class="mb-4">
+                <p><strong>4. How can you add a comment in JavaScript?</strong></p>
+                <label><input type="radio" name="q4" value="a"> // this is a comment</label><br>
+                <label><input type="radio" name="q4" value="b"> /* this is a comment */</label><br>
+                <label><input type="radio" name="q4" value="c"> &lt;!-- this is a comment --&gt;</label><br>
+                <label><input type="radio" name="q4" value="d"> # this is a comment</label>
+            </div>
+            <!-- Question 5 -->
+            <div class="mb-4">
+                <p><strong>5. What is the correct syntax to get the value of an input element with id "myInput"?</strong></p>
+                <label><input type="radio" name="q5" value="a"> document.getElementById("myInput").value;</label><br>
+                <label><input type="radio" name="q5" value="b"> document.querySelector("#myInput").value;</label><br>
+                <label><input type="radio" name="q5" value="c"> document.getElementByName("myInput").value;</label><br>
+                <label><input type="radio" name="q5" value="d"> document.getElement("myInput").value;</label>
+            </div>
+            <button type="button" class="btn btn-dark" id="submitJsQuiz">Submit Quiz</button>
+        </form>
+    </div>
+    <script src="quiz-handler.js"></script>
+</body>
+</html>
